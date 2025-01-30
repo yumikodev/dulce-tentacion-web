@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "@fontsource/pacifico";
+@import "@fontsource-variable/montserrat";
+
+@theme {
+  --font-pacifico: "Pacifico", cursive;
+  --font-sans: "Montserrat Variable", sans-serif;
+}

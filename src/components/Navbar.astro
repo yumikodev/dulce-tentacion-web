@@ -1,0 +1,70 @@
+---
+import { FiMenu } from "react-icons/fi";
+
+interface Item {
+  label: string;
+  url: string;
+}
+
+const items: Item[] = [
+  {
+    label: "Inicio",
+    url: "#",
+  },
+  {
+    label: "Postres",
+    url: "#postres",
+  },
+  {
+    label: "Sobre nosotros",
+    url: "/nosotros",
+  },
+];
+---
+
+<script>
+  const toggleMenu = document.getElementById("toggle-menu");
+  const collapse = document.getElementById("collapse");
+
+  toggleMenu?.addEventListener("click", () => {
+    const hasShow = collapse?.hasAttribute("data-show");
+
+    if (!hasShow) collapse?.setAttribute("data-show", "on");
+    else collapse?.removeAttribute("data-show");
+  });
+</script>
+
+<nav class="bg-rose-200 p-4 flex flex-wrap justify-between fixed w-full">
+  <!-- Brand -->
+  <div>
+    <h5 class="font-pacifico text-3xl text-rose-950">Dulce Bienestar</h5>
+  </div>
+
+  <!-- Button -->
+  <button
+    id="toggle-menu"
+    type="button"
+    class="text-3xl text-rose-950 outline-none sm:hidden"
+  >
+    <FiMenu />
+  </button>
+
+  <!-- Collapse -->
+  <ul
+    id="collapse"
+    class="w-full flex flex-col gap-4 overflow-hidden h-0 max-h-fit data-[show]:pt-4 data-[show]:h-dvh transition-all duration-300 sm:flex-row sm:w-fit sm:h-auto sm:gap-0"
+  >
+    {
+      items.map(({ label, url }) => (
+        <li>
+          <a
+            href={url}
+            class="px-3 py-2 block text-rose-950 text-center hover:underline hover:underline-offset-4 transition-all duration-300"
+          >
+            {label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
