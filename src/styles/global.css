@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import "@fontsource/passion-one";
 @import "@fontsource/pacifico";
 @import "@fontsource-variable/montserrat";
 
 @theme {
+  --font-passion-one: "Passion One", system-ui;
   --font-pacifico: "Pacifico", cursive;
   --font-sans: "Montserrat Variable", sans-serif;
 }

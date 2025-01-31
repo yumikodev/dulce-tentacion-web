@@ -20,6 +20,9 @@ importers:
       '@fontsource/pacifico':
         specifier: 5.1.1
         version: 5.1.1
+      '@fontsource/passion-one':
+        specifier: 5.1.1
+        version: 5.1.1
       '@tailwindcss/vite':
         specifier: 4.0.1
         version: 4.0.1(vite@6.0.11(jiti@2.4.2)(lightningcss@1.29.1))
@@ -29,6 +32,9 @@ importers:
       '@types/react-dom':
         specifier: ^19.0.3
         version: 19.0.3(@types/react@19.0.8)
+      '@vercel/analytics':
+        specifier: 1.4.1
+        version: 1.4.1(react@19.0.0)
       astro:
         specifier: ^5.1.10
         version: 5.1.10(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.32.1)(typescript@5.7.3)
@@ -319,6 +325,9 @@ packages:
 
   '@fontsource/pacifico@5.1.1':
     resolution: {integrity: sha512-KO9BrCcnCaJq1L5CDMlVCTszM2ytAfUmICRTH7Ggb6nBOPaRb0iQ7i0UM+Lrb+cLo3/DbETVOevwE3GFbZ8mtg==}
+
+  '@fontsource/passion-one@5.1.1':
+    resolution: {integrity: sha512-KKjHuU/M28+L55UWejjXB9MWlqB6izffG78ol8xK8UbBPsOhsI3DwclRx8uyu+xyq5M6KUCihShS/jKJVKeqFA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2433,6 +2442,8 @@ snapshots:
   '@fontsource-variable/montserrat@5.1.1': {}
 
   '@fontsource/pacifico@5.1.1': {}
+
+  '@fontsource/passion-one@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
