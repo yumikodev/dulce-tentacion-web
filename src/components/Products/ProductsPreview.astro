@@ -1,9 +1,29 @@
 ---
 import Subtitle from "../Subtitle..astro";
+import data from "../../data/products.json";
+import ProductCard from "./ProductCard.astro";
 ---
 
-<section id="products" class="p-4 w-full max-w-prose mx-auto">
-  <div class="container">
+<section id="products" class="p-4 w-full">
+  <div class="container mx-auto">
     <Subtitle> Productos </Subtitle>
+
+    <div class="w-full h-0.5 bg-linear-90 from-transparent via-rose-950 via-50% to-transparent"></div>
+
+    <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5">
+      {
+        data
+          .slice(0, 6)
+          .map(({ category, id, name, price, img }) => (
+            <ProductCard
+              id={id}
+              img={img}
+              category={category}
+              name={name}
+              price={price}
+            />
+          ))
+      }
+    </div>
   </div>
 </section>

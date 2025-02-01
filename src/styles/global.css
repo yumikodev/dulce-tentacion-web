@@ -7,6 +7,9 @@
   --font-passion-one: "Passion One", system-ui;
   --font-pacifico: "Pacifico", cursive;
   --font-sans: "Montserrat Variable", sans-serif;
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
 }
 
 ::-webkit-scrollbar {
@@ -18,5 +21,5 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-rose-200;
+  @apply bg-rose-100;
 }

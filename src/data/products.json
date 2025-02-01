@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Crema volteada",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Arroz con leche 2",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Arroz con leche 3",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Arroz con leche 4",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Arroz con leche 5",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Arroz con leche 6",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Arroz con leche 7",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  }
+]

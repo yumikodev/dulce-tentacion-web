@@ -1,0 +1,32 @@
+---
+import { FaWhatsapp } from "react-icons/fa6";
+import type { Product } from "../../types/product";
+import Button from "../Button.astro";
+interface Props
+  extends Pick<Product, "id" | "name" | "price" | "category" | "img"> {}
+
+const { category, name, price, img } = Astro.props;
+const phonenumber: string = import.meta.env.VITE_PHONENUMBER || "987654321";
+---
+
+<div
+  class="max-w-80 bg-rose-200 rounded-2xl p-4 hover:scale-105 transition-transform duration-300"
+>
+  <img src={img} alt={name} class="rounded-2xl" />
+
+  <div class="mt-2">
+    <h4 class="text-3xl text-wrap">{name}</h4>
+    <p class="flex gap-1 text-4xl font-passion-one text-rose-950 mb-5">
+      S/. {(price / 100).toFixed(2)}
+      <span class="text-xl font-sans">c/u</span>
+    </p>
+
+    <Button
+      url={`https://wa.me/51${phonenumber}?` +
+        new URLSearchParams({
+          text: `Hola, he revisado su catálogo y me interesa comprar *${name}* (${category}).`,
+        })}
+      external><FaWhatsapp /> Comprar</Button
+    >
+  </div>
+</div>
