@@ -27,24 +27,26 @@ const items: Item[] = [
   const collapse = document.getElementById("collapse");
 
   toggleMenu?.addEventListener("click", () => {
-    const hasShow = collapse?.hasAttribute("data-show");
+    const isShow = collapse?.hasAttribute("data-show");
 
-    if (!hasShow) collapse?.setAttribute("data-show", "on");
+    if (!isShow) collapse?.setAttribute("data-show", "on");
     else collapse?.removeAttribute("data-show");
   });
 </script>
 
-<nav class="bg-rose-200 p-4 flex flex-wrap justify-between fixed w-full">
+<nav
+  class="bg-rose-400 p-4 flex flex-wrap justify-between items-center fixed w-full z-50 transition-colors duration-300"
+>
   <!-- Brand -->
-  <div>
-    <h5 class="font-pacifico text-3xl text-rose-950">Dulce Tentación</h5>
-  </div>
+  <h5 class="font-passion-one text-3xl content-center text-rose-50 uppercase">
+    Dulce Tentación
+  </h5>
 
   <!-- Button -->
   <button
     id="toggle-menu"
     type="button"
-    class="text-3xl text-rose-950 outline-none sm:hidden"
+    class="text-3xl text-rose-50 outline-none sm:hidden"
   >
     <FiMenu />
   </button>
@@ -52,14 +54,14 @@ const items: Item[] = [
   <!-- Collapse -->
   <ul
     id="collapse"
-    class="w-full flex flex-col gap-4 overflow-hidden h-0 max-h-fit data-[show]:pt-4 data-[show]:h-dvh transition-all duration-300 sm:flex-row sm:w-fit sm:h-auto sm:gap-0"
+    class="w-full flex flex-col gap-4 overflow-hidden h-0 max-h-fit data-[show]:pt-4 data-[show]:h-dvh transition-all duration-300 sm:flex-row sm:!p-0 sm:w-fit sm:!h-auto sm:gap-0"
   >
     {
       items.map(({ label, url }) => (
         <li>
           <a
             href={url}
-            class="px-3 py-2 block text-rose-950 text-center hover:underline hover:underline-offset-4 transition-all duration-300"
+            class="px-3 py-2 block text-rose-50 text-center hover:underline hover:underline-offset-4 transition-all duration-300"
           >
             {label}
           </a>

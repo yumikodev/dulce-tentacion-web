@@ -1,0 +1,12 @@
+---
+interface Props {
+  url: string;
+  external?: boolean;
+}
+
+const { url, external } = Astro.props;
+---
+
+<a class="px-6 py-3 uppercase rounded-3xl font-semibold transition-colors duration-300 bg-rose-50 text-rose-950 hover:bg-rose-400 shadow-[0px_2px_3px] shadow-black/50 z-10" href={url} target={external ? "_blank" : "_self"}>
+  <slot />
+</a>
