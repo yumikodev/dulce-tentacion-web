@@ -8,3 +8,15 @@
   --font-pacifico: "Pacifico", cursive;
   --font-sans: "Montserrat Variable", sans-serif;
 }
+
+::-webkit-scrollbar {
+  @apply w-4;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl border-4 bg-rose-500 border-solid border-transparent bg-clip-content;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-rose-200;
+}
