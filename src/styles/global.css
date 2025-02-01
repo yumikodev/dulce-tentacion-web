@@ -12,6 +12,10 @@
   --breakpoint-3xl: 120rem;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   @apply w-4;
 }

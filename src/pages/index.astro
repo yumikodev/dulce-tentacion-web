@@ -1,4 +1,5 @@
 ---
+import { FiArrowDown } from "react-icons/fi";
 import Hero from "../components/Hero.astro";
 import ProductsPreview from "../components/Products/ProductsPreview.astro";
 import Layout from "../layouts/Layout.astro";
@@ -6,5 +7,13 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <Hero />
+
+  <a
+    href="#products"
+    class="sticky inline-block bottom-6 p-1 left-1/2 mx-auto my-6 rounded-full bg-rose-500 text-rose-50 -translate-x-1/2 animate-bounce shadow-[0px_2px_4px_#000000cc]"
+  >
+    <FiArrowDown className="w-8 h-8" />
+  </a>
+
   <ProductsPreview />
 </Layout>

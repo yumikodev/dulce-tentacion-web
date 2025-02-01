@@ -103,5 +103,20 @@
       "Vainilla",
       "Huevos"
     ]
+  },
+  {
+    "id": 8,
+    "name": "Arroz con leche 8",
+    "category": "stevia",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
   }
 ]

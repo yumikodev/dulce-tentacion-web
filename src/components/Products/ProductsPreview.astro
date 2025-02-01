@@ -2,17 +2,45 @@
 import Subtitle from "../Subtitle..astro";
 import data from "../../data/products.json";
 import ProductCard from "./ProductCard.astro";
+
+let filter: "general" | "stevia" = "general";
 ---
+
+<script src="./categorySelection.ts"></script>
 
 <section id="products" class="p-4 w-full">
   <div class="container mx-auto">
     <Subtitle> Productos </Subtitle>
 
-    <div class="w-full h-0.5 bg-linear-90 from-transparent via-rose-950 via-50% to-transparent"></div>
+    <div
+      class="w-full h-0.5 bg-linear-90 from-transparent via-rose-950 via-50% to-transparent"
+    >
+    </div>
 
-    <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5">
+    <div
+      id="category-selector"
+      class="w-full flex gap-2 justify-center mt-6 mb-2"
+    >
+      <button
+        class="px-4 py-2 rounded-3xl bg-rose-500 text-rose-50 uppercase hover:bg-rose-600 transition-colors duration-300"
+        data-category="general"
+      >
+        Con Azúcar
+      </button>
+      <button
+        class="px-4 py-2 rounded-3xl bg-rose-500 text-rose-50 uppercase hover:bg-rose-600 transition-colors duration-300"
+        data-category="stevia"
+      >
+        Con Stevia
+      </button>
+    </div>
+
+    <div
+      class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5 max-w-screen-xl mx-auto"
+    >
       {
         data
+          .filter((p) => p.category === filter)
           .slice(0, 6)
           .map(({ category, id, name, price, img }) => (
             <ProductCard

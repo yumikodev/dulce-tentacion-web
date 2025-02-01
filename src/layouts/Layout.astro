@@ -1,5 +1,5 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
 import Analytics from "@vercel/analytics/astro";
 import "../styles/global.css";
 ---
@@ -20,6 +20,15 @@ import "../styles/global.css";
       name="keywords"
       content="Dulces,Postres,Tentación,Stevia,Saludable,Azúcar,Riquísimos,Perú,Talara,Diabéticos,Alternativa"
     />
+    <meta property="og:title" content="Dulce Tentación" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dulcetentacion.vercel.app" />
+    <meta
+      property="og:description"
+      content="Azúcar tradicional o Stevia, disfruta de nuestros riquísimos postres en sus diferentes presentaciones sin impedimentos."
+    />
+    <!-- <meta property="og:image" content="https://">
+    <meta property="og:image:alt" content=""> -->
     <Analytics />
   </head>
   <body class="bg-rose-100">
