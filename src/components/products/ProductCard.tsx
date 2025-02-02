@@ -3,13 +3,29 @@ import socials from "@/data/socials.json";
 import LinkBtn from "../LinkBtn";
 import { FaList, FaWhatsapp } from "react-icons/fa6";
 import Image from "next/image";
+import { useRef } from "react";
+import { useIsVisible } from "@/hooks/isVisible";
 
 type Props = Pick<Product, "id" | "name" | "price" | "category" | "img">;
 
 function ProductCard({ id, category, img, name, price }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIsVisible(ref);
+
   return (
-    <div className="w-full bg-rose-200 rounded-2xl p-4 shadow">
-      <Image src={img} alt={name} className="rounded-2xl" width={500} height={400} />
+    <div
+      ref={ref}
+      className={`w-full bg-rose-200 rounded-2xl p-4 shadow z-10 ${
+        isVisible ? "animate-fadeInLeft" : "opacity-0"
+      }`}
+    >
+      <Image
+        src={img}
+        alt={name}
+        className="rounded-2xl"
+        width={500}
+        height={400}
+      />
 
       <div className="mt-2">
         <h4 className="text-3xl text-wrap">{name}</h4>

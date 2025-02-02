@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "animate.css";
 
 @theme {
   --font-passion-one: var(--font-passion-one), system-ui;
@@ -6,6 +7,8 @@
   --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
+  --animate-fadeInDown: fadeInDown 1s;
+  --animate-fadeInLeft: fadeInLeft 1s;
 }
 
 * {

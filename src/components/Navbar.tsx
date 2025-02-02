@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 interface Item {
   label: string;
@@ -31,9 +32,18 @@ function Navbar() {
   return (
     <nav className="bg-rose-500 p-4 flex flex-wrap justify-between items-center fixed w-full z-50 transition-colors duration-300">
       {/* Brand */}
-      <h5 className="font-passion-one text-3xl content-center text-rose-50 uppercase">
-        Dulce Tentación
-      </h5>
+      <div className="flex gap-3">
+        <Image
+          src="/imgs/logo.jpg"
+          alt="Dulce Tentación"
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
+        <h5 className="font-passion-one text-3xl content-center text-rose-50 uppercase">
+          Dulce Tentación
+        </h5>
+      </div>
 
       {/* Button */}
       <button
@@ -42,7 +52,7 @@ function Navbar() {
         className="text-3xl text-rose-50 outline-none sm:hidden"
         onClick={handleClick}
       >
-        <FiMenu />
+        {active ? <FiX /> : <FiMenu />}
       </button>
 
       {/* Collapse */}
