@@ -9,7 +9,7 @@ type Props = Pick<Product, "id" | "name" | "price" | "category" | "img">;
 function ProductCard({ id, category, img, name, price }: Props) {
   return (
     <div className="w-full bg-rose-200 rounded-2xl p-4 shadow">
-      <Image src={img} alt={name} className="rounded-2xl" />
+      <Image src={img} alt={name} className="rounded-2xl" width={500} height={400} />
 
       <div className="mt-2">
         <h4 className="text-3xl text-wrap">{name}</h4>

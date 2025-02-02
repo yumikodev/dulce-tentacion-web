@@ -11,6 +11,7 @@ const passionOne = Passion_One({
 });
 
 const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -50,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${passionOne.variable} ${montserrat.className} bg-rose-100`}
+        className={`${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100`}
       >
         <Navbar />
         {children}
