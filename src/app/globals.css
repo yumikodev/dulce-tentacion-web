@@ -1,12 +1,8 @@
 @import "tailwindcss";
-@import "@fontsource/passion-one";
-@import "@fontsource/pacifico";
-@import "@fontsource-variable/montserrat";
 
 @theme {
-  --font-passion-one: "Passion One", system-ui;
-  --font-pacifico: "Pacifico", cursive;
-  --font-sans: "Montserrat Variable", sans-serif;
+  --font-passion-one: var(--font-passion-one), system-ui;
+  --font-sans: var(--f-montserrat), sans-serif;
   --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
