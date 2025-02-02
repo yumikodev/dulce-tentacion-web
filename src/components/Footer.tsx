@@ -105,6 +105,8 @@ function Footer() {
           </ul>
         </div>
       </div>
+
+      <p className="text-center text-rose-50/70 mb-6">Desarrollado por <a href="https://yumikodev.vercel.app" className="text-rose-300 underline underline-offset-2">Edwin J.</a></p>
     </footer>
   );
 }
