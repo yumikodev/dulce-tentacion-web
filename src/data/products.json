@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Crema volteada",
+    "name": "Arroz con leche",
     "category": "general",
     "price": 500,
     "img": "/imgs/products/p1.jpg",
@@ -107,6 +107,21 @@
   {
     "id": 8,
     "name": "Arroz con leche 8",
+    "category": "stevia",
+    "price": 500,
+    "img": "/imgs/products/p1.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": [
+      "Leche",
+      "Leche condensada",
+      "Azúcar blanca",
+      "Vainilla",
+      "Huevos"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Arroz con leche Lite",
     "category": "stevia",
     "price": 500,
     "img": "/imgs/products/p1.jpg",
