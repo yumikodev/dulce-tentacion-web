@@ -9,6 +9,7 @@
   --breakpoint-3xl: 120rem;
   --animate-fadeInDown: fadeInDown 1s;
   --animate-fadeInLeft: fadeInLeft 1s;
+  --animate-bounceIn: bounceIn 1s;
 }
 
 * {

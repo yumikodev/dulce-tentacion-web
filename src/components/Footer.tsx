@@ -1,4 +1,5 @@
 import socials from "@/data/socials.json";
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebook,
@@ -39,9 +40,18 @@ function Footer() {
 
       <div className="container px-4 py-10 max-w-screen-lg mx-auto flex flex-col gap-6 sm:flex-row sm:justify-between">
         <div className="w-full">
-          <h4 className="font-passion-one uppercase text-3xl text-rose-50">
-            Dulce Tentación ™
-          </h4>
+          <div className="flex items-center gap-2 mb-1">
+            <Image
+              src="/imgs/logo.jpg"
+              alt="Dulce Bienestar"
+              width={50}
+              height={50}
+              className="rounded-full"
+            />
+            <h5 className="font-passion-one uppercase text-3xl text-rose-50">
+              Dulce Tentación ™
+            </h5>
+          </div>
           <p className="text-rose-200 max-w-md">
             Azúcar tradicional o Stevia, disfruta de nuestros riquísimos postres
             en sus diferentes presentaciones sin impedimentos.
@@ -106,7 +116,15 @@ function Footer() {
         </div>
       </div>
 
-      <p className="text-center text-rose-50/70 mb-6">Desarrollado por <a href="https://yumikodev.vercel.app" className="text-rose-300 underline underline-offset-2">Edwin J.</a></p>
+      <p className="text-center text-rose-50/70 mb-6">
+        Desarrollado por{" "}
+        <a
+          href="https://yumikodev.vercel.app"
+          className="text-rose-300 underline underline-offset-2"
+        >
+          Edwin J.
+        </a>
+      </p>
     </footer>
   );
 }

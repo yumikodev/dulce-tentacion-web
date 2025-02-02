@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <nav className="bg-rose-500 p-4 flex flex-wrap justify-between items-center fixed w-full z-50 transition-colors duration-300">
       {/* Brand */}
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         <Image
           src="/imgs/logo.jpg"
           alt="Dulce Tentación"
@@ -52,7 +52,11 @@ function Navbar() {
         className="text-3xl text-rose-50 outline-none sm:hidden"
         onClick={handleClick}
       >
-        {active ? <FiX /> : <FiMenu />}
+        {active ? (
+          <FiX className="animate-bounceIn" />
+        ) : (
+          <FiMenu className="animate-bounceIn" />
+        )}
       </button>
 
       {/* Collapse */}
