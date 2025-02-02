@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -15,7 +16,7 @@ function Navbar() {
   const items: Item[] = [
     {
       label: "Inicio",
-      url: "#",
+      url: "/",
     },
     {
       label: "Postres",
@@ -67,12 +68,13 @@ function Navbar() {
       >
         {items.map(({ label, url }, key) => (
           <li key={key}>
-            <a
+            <Link
               href={url}
               className="px-3 py-2 block font-semibold text-rose-50 text-center hover:underline hover:underline-offset-4 transition-all duration-300"
+              onClick={() => setActive(false)}
             >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
