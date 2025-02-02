@@ -3,10 +3,14 @@
 import Subtitle from "@/components/Subtitle";
 import data from "@/data/products.json";
 import ProductCard from "./ProductCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ProductPreview() {
   const [filter, setFilter] = useState<"general" | "stevia">("general");
+
+  useEffect(() => {
+    setFilter("general");
+  }, []);
 
   return (
     <section id="products" className="p-4 w-full">

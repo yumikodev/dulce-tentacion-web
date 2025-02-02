@@ -2,14 +2,14 @@ import { Product } from "@/types/product";
 import socials from "@/data/socials.json";
 import LinkBtn from "../LinkBtn";
 import { FaList, FaWhatsapp } from "react-icons/fa6";
+import Image from "next/image";
 
-interface Props
-  extends Pick<Product, "id" | "name" | "price" | "category" | "img"> {}
+type Props = Pick<Product, "id" | "name" | "price" | "category" | "img">;
 
 function ProductCard({ id, category, img, name, price }: Props) {
   return (
     <div className="w-full bg-rose-200 rounded-2xl p-4 shadow">
-      <img src={img} alt={name} className="rounded-2xl" />
+      <Image src={img} alt={name} className="rounded-2xl" />
 
       <div className="mt-2">
         <h4 className="text-3xl text-wrap">{name}</h4>
