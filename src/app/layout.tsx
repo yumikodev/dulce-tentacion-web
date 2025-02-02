@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 const passionOne = Passion_One({
   variable: "--font-passion-one",
   weight: "400",
+  subsets: ["latin"],
 });
 
 const montserrat = Montserrat({
