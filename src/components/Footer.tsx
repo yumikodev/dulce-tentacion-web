@@ -16,10 +16,6 @@ function Footer() {
       url: "#",
     },
     {
-      label: "Contactanos",
-      url: "#",
-    },
-    {
       label: "Postres",
       url: "/postres",
       children: [
@@ -105,7 +101,7 @@ function Footer() {
                 <a
                   href={link}
                   target="_blank"
-                  className="text-rose-50 flex gap-2 items-center px-3 py-2 bg-rose-500 rounded-3xl"
+                  className="text-rose-50 flex gap-2 items-center px-3 py-2 bg-rose-500 hover:bg-rose-600 rounded-3xl transition-colors duration-300"
                 >
                   {type === "WhatsApp" ? (
                     <FaWhatsapp />
