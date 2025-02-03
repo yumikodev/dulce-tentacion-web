@@ -20,7 +20,7 @@ function Navbar() {
     },
     {
       label: "Postres",
-      url: "#postres",
+      url: "/postres",
     },
     {
       label: "Sobre nosotros",
@@ -31,7 +31,7 @@ function Navbar() {
   const handleClick = () => setActive(!active);
 
   return (
-    <nav className="bg-rose-500 p-4 flex flex-wrap justify-between items-center fixed w-full z-50 transition-colors duration-300">
+    <nav className="bg-rose-500 p-4 flex flex-wrap justify-between items-center fixed top-0 left-0 w-full z-50 transition-colors duration-300">
       {/* Brand */}
       <div className="flex gap-3 items-center">
         <Image

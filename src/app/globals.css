@@ -16,6 +16,16 @@
   scroll-behavior: smooth;
 }
 
+body {
+  @apply h-full;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100dvh;
+}
+
 ::-webkit-scrollbar {
   @apply w-4;
 }

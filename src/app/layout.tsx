@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100`}
+        className={`${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100 min-h-dvh`}
       >
         <Navbar />
         {children}

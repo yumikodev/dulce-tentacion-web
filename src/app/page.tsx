@@ -4,7 +4,7 @@ import { FiArrowDown } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
 
       <a
@@ -15,6 +15,6 @@ export default function Home() {
       </a>
 
       <ProductPreview />
-    </>
+    </div>
   );
 }

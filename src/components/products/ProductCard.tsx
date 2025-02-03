@@ -47,7 +47,7 @@ function ProductCard({ id, category, img, name, price }: Props) {
           >
             <FaWhatsapp /> Comprar
           </LinkBtn>
-          <LinkBtn url={`/products/${id}`} wFull>
+          <LinkBtn url={`/postres/${id}`} wFull>
             <FaList /> Detalles
           </LinkBtn>
         </div>

@@ -21,14 +21,15 @@ function Footer() {
     },
     {
       label: "Postres",
+      url: "/postres",
       children: [
         {
           label: "Con Azúcar",
-          url: "#",
+          url: "/postres?category=general",
         },
         {
           label: "Con Stevia",
-          url: "#",
+          url: "/postres?category=stevia",
         },
       ],
     },
@@ -58,7 +59,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex justify-between w-full sm:max-w-sm">
-          <ul className="flex flex-col gap-1">
+          <ul className="flex flex-col gap-2">
             <h5 className="text-lg text-rose font-semibold text-rose-50">
               Secciones
             </h5>
@@ -66,25 +67,32 @@ function Footer() {
             {sections.map((s, key) =>
               s.children ? (
                 <li key={key}>
-                  <span className="flex gap-2 text-rose-100 items-center">
+                  <Link
+                    href={s.url}
+                    className="flex gap-2 text-rose-100 items-center hover:underline"
+                  >
                     <FaAsterisk className="text-rose-300" />
                     {s.label}
-                  </span>
-                  <ul className="flex flex-col gap-1 mt-1 ml-6">
+                  </Link>
+                  <ul className="flex flex-col gap-2 mt-1 ml-6">
                     {s.children.map(({ label, url }, key) => (
                       <li key={key}>
-                        <Link href={url} className="text-rose-100">
-                          <span className="flex gap-2 text-rose-100 items-center">
-                            <FaAsterisk className="text-rose-400" />
-                            {label}
-                          </span>
+                        <Link
+                          href={url}
+                          className="flex gap-2 text-rose-100 items-center hover:underline"
+                        >
+                          <FaAsterisk className="text-rose-400" />
+                          {label}
                         </Link>
                       </li>
                     ))}
                   </ul>
                 </li>
               ) : (
-                <li key={key} className="flex gap-2 text-rose-100 items-center">
+                <li
+                  key={key}
+                  className="flex gap-2 text-rose-100 items-center hover:underline"
+                >
                   <FaAsterisk className="text-rose-300" />
                   <Link href={s.url}>{s.label}</Link>
                 </li>

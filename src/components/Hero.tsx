@@ -10,7 +10,7 @@ function Hero() {
       </h1>
 
       <div className="animate-fadeInDown flex gap-3 flex-wrap items-center justify-center">
-        <LinkBtn url="/productos"> Ver catálogo</LinkBtn>
+        <LinkBtn url="/postres"> Ver catálogo</LinkBtn>
         <LinkBtn url="#contacto"> Contacto</LinkBtn>
       </div>
 

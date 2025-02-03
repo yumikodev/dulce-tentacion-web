@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 interface Props {
@@ -9,15 +10,15 @@ interface Props {
 
 function LinkBtn({ children, url, external, wFull }: Props) {
   return (
-    <a
+    <Link
       className={`px-6 py-3 flex ${
         wFull && "w-full"
       } gap-2 items-center justify-center uppercase rounded-3xl font-semibold transition-colors duration-300 bg-rose-50 text-rose-950 hover:bg-rose-500 hover:text-rose-50 shadow-[0px_2px_3px] shadow-black/50 z-10`}
       href={url}
-      target={external ? "_blank" : "_self"}
+      {...(external && { target: "_blank" })}
     >
       {children}
-    </a>
+    </Link>
   );
 }
 
