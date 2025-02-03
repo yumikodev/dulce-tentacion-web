@@ -1,18 +1,18 @@
 "use client";
 
+import { MouseEvent, useState } from "react";
+import { FiArrowRight } from "react-icons/fi";
+import CategorySwitcher from "@/app/postres/components/CategorySwitcher";
 import Subtitle from "@/components/Subtitle";
 import data from "@/data/products.json";
 import ProductCard from "./ProductCard";
-import { MouseEvent, useState } from "react";
-import CategorySwitcher from "@/app/postres/components/CategorySwitcher";
+import LinkBtn from "../LinkBtn";
 
 function ProductPreview() {
-  const [filter, setFilter] = useState<"general" | "stevia">("general");
+  const [filter, setFilter] = useState<string>("general");
 
   const handleSwitch = (e: MouseEvent<HTMLButtonElement>) => {
-    const category = e.currentTarget.getAttribute("data-category") as
-      | "general"
-      | "stevia";
+    const category = e.currentTarget.getAttribute("data-category");
 
     if (category) setFilter(category);
   };
@@ -29,7 +29,7 @@ function ProductPreview() {
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5 max-w-screen-xl mx-auto">
           {data
             .filter((p) => p.category === filter)
-            .slice(0, 6)
+            .slice(0, 3)
             .map(({ category, id, name, price, img }) => (
               <ProductCard
                 key={id}
@@ -40,6 +40,12 @@ function ProductPreview() {
                 price={price}
               />
             ))}
+        </div>
+
+        <div className="mt-6 max-w-xl mx-auto">
+          <LinkBtn url={`/postres?category=${filter}`}>
+            Ver la lista completa <FiArrowRight />
+          </LinkBtn>
         </div>
       </div>
     </section>

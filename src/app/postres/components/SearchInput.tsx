@@ -35,6 +35,7 @@ export default function SearchInput() {
         name="search"
         placeholder="Buscar un postre..."
         className="px-3 py-2 outline-none w-full rounded-2xl"
+        autoComplete="off"
       />
       <button
         type="submit"
