@@ -39,7 +39,7 @@ function Footer() {
         <div className="w-full">
           <div className="flex items-center gap-2 mb-1">
             <Image
-              src="/imgs/logo.jpg"
+              src="/imgs/logo.png"
               alt="Dulce Bienestar"
               width={50}
               height={50}

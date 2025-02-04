@@ -35,7 +35,7 @@ function Navbar() {
       {/* Brand */}
       <div className="flex gap-3 items-center">
         <Image
-          src="/imgs/logo.jpg"
+          src="/imgs/logo.png"
           alt="Dulce Tentación"
           width={40}
           height={40}
