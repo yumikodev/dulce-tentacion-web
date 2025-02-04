@@ -22,7 +22,7 @@ function ProductCard({ id, category, img, name, price }: Props) {
       <Image
         src={img}
         alt={name}
-        className="rounded-2xl"
+        className="rounded-2xl w-full max-h-56 h-full object-cover"
         width={500}
         height={400}
       />
