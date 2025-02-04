@@ -3,135 +3,54 @@
     "id": 1,
     "name": "Arroz con leche",
     "category": "general",
-    "price": 500,
+    "price": 300,
     "img": "/imgs/products/p1.jpg",
     "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
+    "details": []
   },
   {
     "id": 2,
-    "name": "Arroz con leche 2",
-    "category": "general",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Arroz con leche 3",
-    "category": "general",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Arroz con leche 4",
-    "category": "general",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Arroz con leche 5",
-    "category": "general",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Arroz con leche 6",
-    "category": "general",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Arroz con leche 7",
-    "category": "stevia",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Arroz con leche 8",
-    "category": "stevia",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
-  },
-  {
-    "id": 9,
     "name": "Arroz con leche Lite",
     "category": "stevia",
     "price": 500,
     "img": "/imgs/products/p1.jpg",
     "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Leche",
-      "Leche condensada",
-      "Azúcar blanca",
-      "Vainilla",
-      "Huevos"
-    ]
+    "details": []
+  },
+  {
+    "id": 3,
+    "name": "Crema volteada",
+    "category": "general",
+    "price": 400,
+    "img": "/imgs/products/p2.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": []
+  },
+  {
+    "id": 4,
+    "name": "Torta helada",
+    "category": "general",
+    "price": 450,
+    "img": "/imgs/products/p3.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": []
+  },
+  {
+    "id": 5,
+    "name": "Pie de limón",
+    "category": "general",
+    "price": 500,
+    "img": "/imgs/products/p4.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": []
+  },
+  {
+    "id": 5,
+    "name": "Panqueques de avena",
+    "category": "stevia",
+    "price": 550,
+    "img": "/imgs/products/p5.jpg",
+    "description": "Una descripción muy interesante aquí.",
+    "details": []
   }
 ]
