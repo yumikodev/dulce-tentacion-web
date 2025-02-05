@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Passion_One, Montserrat } from "next/font/google";
+import { DynaPuff, Montserrat, Passion_One } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const dynapuff = DynaPuff({
+  variable: "--font-dynapuff",
+  subsets: ["latin"],
+});
 
 const passionOne = Passion_One({
   variable: "--font-passion-one",
@@ -51,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100 min-h-dvh`}
+        className={`${dynapuff.variable} ${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100 min-h-dvh`}
       >
         <Navbar />
         {children}

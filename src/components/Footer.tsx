@@ -45,7 +45,7 @@ function Footer() {
               height={50}
               className="rounded-full"
             />
-            <h5 className="font-passion-one uppercase text-3xl text-rose-50">
+            <h5 className="font-dynapuff uppercase text-2xl text-rose-50">
               Dulce Tentación ™
             </h5>
           </div>

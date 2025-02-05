@@ -2,6 +2,7 @@
 @import "animate.css";
 
 @theme {
+  --font-dynapuff: var(--font-dynapuff), system-ui;
   --font-passion-one: var(--font-passion-one), system-ui;
   --font-montserrat: var(--font-montserrat), sans-serif;
   --breakpoint-xs: 30rem;
