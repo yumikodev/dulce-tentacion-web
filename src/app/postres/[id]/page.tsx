@@ -23,7 +23,7 @@ export default async function Postre({ params }: Props) {
 
   return (
     <div className="container p-3 mt-20 w-full mx-auto">
-      <div className="flex flex-col items-start gap-2 sm:flex-row sm:gap-4 mb-6">
+      <div className="flex flex-col items-start gap-2 sm:flex-row sm:gap-4 mb-6 w-fit mx-auto">
         <div className="relative rounded-2xl overflow-hidden">
           <span className="absolute top-0 left-0 bg-rose-50/50 backdrop-blur-2xl rounded-br-2xl">
             <div className="flex items-center gap-2 px-3 py-2 text-rose-950">
