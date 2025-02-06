@@ -3,54 +3,63 @@
     "id": 1,
     "name": "Arroz con leche",
     "category": "general",
-    "price": 300,
+    "price": [300],
     "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": [
-      "Canela",
-      "Clavos de Olor",
-      "Arroz",
-      "Esencia de Vainilla",
-      "Leche",
-      "Leche condensada",
-      "Pasas",
-      "Canela en polvo"
-    ]
+    "description": "Un delicioso postre tradicional hecho con arroz, leche, y azúcar, acompañado de pasas y un toque de canela. Es cremoso y dulce, ideal para disfrutar como un reconfortante postre.",
+    "availability": ["Porción"]
   },
   {
     "id": 2,
     "name": "Crema volteada",
     "category": "general",
-    "price": 500,
+    "price": [500],
     "img": "/imgs/products/p2.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": []
+    "description": "Un postre suave y cremoso, similar al flan, hecho con leche, azúcar y huevos. Su consistencia es ligera y su sabor dulce es perfecto para los amantes de los postres tradicionales.",
+    "availability": ["Porción"]
   },
   {
     "id": 3,
     "name": "Torta helada",
     "category": "general",
-    "price": 500,
+    "price": [500, 3000, 5500],
     "img": "/imgs/products/p3.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": []
+    "description": "Una torta fresca y ligera, ideal para los días cálidos. Su base esponjosa, con una capa de crema y un toque de fruta o chocolate, la convierte en un postre irresistible para cualquier ocasión.",
+    "availability": ["Porción", "1/2 Kg", "1 Kilo"]
   },
   {
     "id": 4,
     "name": "Pie de limón",
     "category": "stevia",
-    "price": 500,
+    "price": [500, 4800],
     "img": "/imgs/products/p4.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": []
+    "description": "Un delicioso pie con una base crujiente y un relleno cremoso de limón. Este postre es una alternativa baja en azúcar, endulzado con stevia para quienes buscan disfrutar de un sabor dulce sin culpa.",
+    "availability": ["Porción", "1 Kilo"]
   },
   {
     "id": 5,
     "name": "Panqueques de avena",
     "category": "stevia",
-    "price": 550,
+    "price": [550],
     "img": "/imgs/products/p5.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": []
+    "description": "Panqueques ligeros y saludables, hechos con avena y endulzados con stevia. Son perfectos para un desayuno nutritivo y bajo en azúcar, ideales para acompañar con frutas frescas o miel.",
+    "availability": ["Porción"]
+  },
+  {
+    "id": 6,
+    "name": "Arroz con leche lite",
+    "category": "stevia",
+    "price": [400],
+    "img": "/imgs/products/p1.jpg",
+    "description": "Un delicioso postre tradicional hecho con arroz, leche, y azúcar, acompañado de pasas y un toque de canela. Es cremoso y dulce, ideal para disfrutar como un reconfortante postre.",
+    "availability": ["Porción"]
+  },
+  {
+    "id": 7,
+    "name": "Pie de limón",
+    "category": "general",
+    "price": [400, 4600],
+    "img": "/imgs/products/p4.jpg",
+    "description": "Un delicioso pie con una base crujiente y un relleno cremoso de limón. Este postre es una alternativa baja en azúcar, endulzado con stevia para quienes buscan disfrutar de un sabor dulce sin culpa.",
+    "availability": ["Porción", "1 Kilo"]
   }
 ]

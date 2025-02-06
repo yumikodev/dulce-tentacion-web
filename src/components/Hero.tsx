@@ -11,7 +11,7 @@ function Hero() {
 
       <div className="animate-fadeInDown flex gap-3 flex-wrap items-center justify-center">
         <LinkBtn url="/postres"> Ver catálogo</LinkBtn>
-        <LinkBtn url="#contacto"> Contacto</LinkBtn>
+        <LinkBtn url="#footer"> Contacto</LinkBtn>
       </div>
 
       <div className="absolute left-0 -bottom-5 w-full h-10 rounded-[100%] bg-rose-100 md:h-16 md:-bottom-8 xl:h-24 xl:-bottom-12 2xl:h-40 2xl:-bottom-20"></div>
