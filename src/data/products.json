@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Crema volteada",
     "category": "general",
-    "price": 400,
+    "price": 500,
     "img": "/imgs/products/p2.jpg",
     "description": "Una descripción muy interesante aquí.",
     "details": []
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Torta helada",
     "category": "general",
-    "price": 450,
+    "price": 500,
     "img": "/imgs/products/p3.jpg",
     "description": "Una descripción muy interesante aquí.",
     "details": []
