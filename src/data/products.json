@@ -6,16 +6,16 @@
     "price": 300,
     "img": "/imgs/products/p1.jpg",
     "description": "Una descripción muy interesante aquí.",
-    "details": []
-  },
-  {
-    "id": 2,
-    "name": "Arroz con leche Lite",
-    "category": "stevia",
-    "price": 500,
-    "img": "/imgs/products/p1.jpg",
-    "description": "Una descripción muy interesante aquí.",
-    "details": []
+    "details": [
+      "Canela",
+      "Clavos de Olor",
+      "Arroz",
+      "Esencia de Vainilla",
+      "Leche",
+      "Leche condensada",
+      "Pasas",
+      "Canela en polvo"
+    ]
   },
   {
     "id": 3,
