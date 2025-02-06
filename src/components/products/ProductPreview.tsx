@@ -30,9 +30,9 @@ function ProductPreview() {
           {data
             .filter((p) => p.category === filter)
             .slice(0, 3)
-            .map(({ category, id, name, price, img }) => (
+            .map(({ category, id, name, price, img }, key) => (
               <ProductCard
-                key={id}
+                key={key}
                 id={id}
                 img={img}
                 category={category}

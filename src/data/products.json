@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Crema volteada",
     "category": "general",
     "price": 500,
@@ -27,7 +27,7 @@
     "details": []
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Torta helada",
     "category": "general",
     "price": 500,
@@ -36,7 +36,7 @@
     "details": []
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Pie de limón",
     "category": "stevia",
     "price": 500,
