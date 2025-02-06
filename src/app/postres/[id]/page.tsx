@@ -67,8 +67,8 @@ export default async function Postre({ params }: Props) {
             <summary className="bg-rose-50 cursor-pointer">Detalles</summary>
 
             <ul className="list-disc list-inside">
-              {details.map((text) => (
-                <li>{text}</li>
+              {details.map((text, key) => (
+                <li key={key}>{text}</li>
               ))}
             </ul>
           </details>
