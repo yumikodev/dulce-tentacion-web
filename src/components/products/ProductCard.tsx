@@ -32,7 +32,6 @@ function ProductCard({ id, category, img, name, price }: Props) {
           <h4 className="text-3xl text-wrap">{name}</h4>
           <p className="flex gap-1 text-4xl font-passion-one text-rose-950 mb-5">
             S/. {(price[0] / 100).toFixed(2)}
-            <span className="text-xl font-sans">c/u</span>
           </p>
         </div>
       </div>

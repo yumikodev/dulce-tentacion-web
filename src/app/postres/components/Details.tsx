@@ -49,7 +49,6 @@ export function Details({ index }: Props) {
 
         <p className="flex gap-1 text-4xl font-passion-one text-rose-950 mb-2">
           S/. {(price[priceIndex] / 100).toFixed(2)}
-          <span className="text-xl font-sans">c/u</span>
         </p>
 
         <h2 className="text-xl mb-1">Disponibilidad:</h2>
