@@ -5,6 +5,7 @@ import { FaList, FaWhatsapp } from "react-icons/fa6";
 import Image from "next/image";
 import { useRef } from "react";
 import { useIsVisible } from "@/hooks/isVisible";
+import { FiAlertCircle } from "react-icons/fi";
 
 type Props = Pick<Product, "id" | "name" | "price" | "category" | "img">;
 
@@ -15,7 +16,7 @@ function ProductCard({ id, category, img, name, price }: Props) {
   return (
     <div
       ref={ref}
-      className={`z-10 flex w-full flex-col justify-between rounded-2xl bg-rose-200 p-4 shadow ${
+      className={`z-10 flex w-full flex-col justify-between gap-3 rounded-3xl bg-rose-200 p-4 shadow ${
         isVisible ? "animate-fadeInLeft" : "opacity-0"
       }`}
     >
@@ -28,11 +29,17 @@ function ProductCard({ id, category, img, name, price }: Props) {
           height={400}
         />
 
-        <div className="mt-2">
+        <div className="mt-1">
           <h4 className="text-3xl text-wrap">{name}</h4>
-          <p className="font-passion-one mb-5 flex gap-1 text-4xl text-rose-950">
+          <p className="font-passion-one mb-2 flex gap-1 text-4xl text-rose-950">
             S/. {(price[0] / 100).toFixed(2)}
           </p>
+
+          {/* alert */}
+          <div className="grid grid-cols-[auto_1fr] items-center gap-2 rounded-2xl bg-rose-800 px-3 py-2 text-rose-50">
+            <FiAlertCircle /> Los pedidos deben realizarse con mínimo 1 día de
+            anticipación.
+          </div>
         </div>
       </div>
 

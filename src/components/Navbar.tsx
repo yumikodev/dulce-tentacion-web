@@ -37,7 +37,7 @@ function Navbar() {
           height={40}
           className="rounded-full"
         />
-        <h5 className="font-dynapuff content-center text-2xl text-rose-50 uppercase">
+        <h5 className="font-dynapuff content-center text-xl text-rose-50 uppercase">
           Dulce Tentación
         </h5>
       </div>

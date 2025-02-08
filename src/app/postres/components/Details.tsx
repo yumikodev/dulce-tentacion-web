@@ -7,6 +7,7 @@ import { GiCubes, GiThreeLeaves } from "react-icons/gi";
 import data from "@/data/products.json";
 import socials from "@/data/socials.json";
 import { useState } from "react";
+import { FiAlertCircle } from "react-icons/fi";
 
 interface Props {
   index: number;
@@ -50,7 +51,6 @@ export function Details({ index }: Props) {
         <p className="font-passion-one mb-2 flex gap-1 text-4xl text-rose-950">
           S/. {(price[priceIndex] / 100).toFixed(2)}
         </p>
-
         <h2 className="mb-1 text-xl">Disponibilidad:</h2>
         <ul className="mb-3 flex gap-2">
           {availability.map((label, key) => (
@@ -65,6 +65,12 @@ export function Details({ index }: Props) {
             </li>
           ))}
         </ul>
+
+        {/* alert */}
+        <div className="mb-3 grid grid-cols-[auto_1fr] items-center gap-2 rounded-2xl bg-rose-800 px-3 py-2 text-rose-50">
+          <FiAlertCircle /> Los pedidos deben realizarse con mínimo 1 día de
+          anticipación.
+        </div>
 
         <LinkBtn
           url={

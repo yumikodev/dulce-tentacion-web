@@ -12,10 +12,6 @@ import {
 function Footer() {
   const sections = [
     {
-      label: "Sobre nosotros",
-      url: "#",
-    },
-    {
       label: "Postres",
       url: "/postres",
       children: [
