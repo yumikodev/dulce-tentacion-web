@@ -32,7 +32,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-xl border-4 bg-rose-500 border-solid border-transparent bg-clip-content;
+  @apply rounded-xl border-4 border-solid border-transparent bg-rose-500 bg-clip-content;
 }
 
 ::-webkit-scrollbar-track {

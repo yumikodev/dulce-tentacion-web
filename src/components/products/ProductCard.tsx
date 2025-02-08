@@ -15,7 +15,7 @@ function ProductCard({ id, category, img, name, price }: Props) {
   return (
     <div
       ref={ref}
-      className={`w-full flex flex-col justify-between bg-rose-200 rounded-2xl p-4 shadow z-10 ${
+      className={`z-10 flex w-full flex-col justify-between rounded-2xl bg-rose-200 p-4 shadow ${
         isVisible ? "animate-fadeInLeft" : "opacity-0"
       }`}
     >
@@ -23,21 +23,21 @@ function ProductCard({ id, category, img, name, price }: Props) {
         <Image
           src={img}
           alt={name}
-          className="rounded-2xl w-full max-h-56 h-full object-cover"
+          className="h-full max-h-56 w-full rounded-2xl object-cover"
           width={500}
           height={400}
         />
 
         <div className="mt-2">
           <h4 className="text-3xl text-wrap">{name}</h4>
-          <p className="flex gap-1 text-4xl font-passion-one text-rose-950 mb-5">
+          <p className="font-passion-one mb-5 flex gap-1 text-4xl text-rose-950">
             S/. {(price[0] / 100).toFixed(2)}
           </p>
         </div>
       </div>
 
       {/* Buttons */}
-      <div className="flex flex-wrap items-center gap-2 w-full">
+      <div className="flex w-full flex-wrap items-center gap-2">
         <LinkBtn
           url={
             `${socials[0].link}?` +

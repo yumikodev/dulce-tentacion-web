@@ -14,10 +14,8 @@ export default async function Postre({ params }: Props) {
 
   if (postreIndex === -1) return <NotFound />;
 
-
-
   return (
-    <div className="container p-3 mt-20 w-full mx-auto">
+    <div className="container mx-auto mt-20 w-full p-3">
       <Details index={postreIndex} />
       <ProductPreview />
     </div>

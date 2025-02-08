@@ -56,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${dynapuff.variable} ${passionOne.variable} ${montserrat.className} ${montserrat.variable} bg-rose-100 min-h-dvh`}
+        className={`${dynapuff.variable} ${passionOne.variable} ${montserrat.className} ${montserrat.variable} min-h-dvh bg-rose-100`}
       >
         <Navbar />
         {children}

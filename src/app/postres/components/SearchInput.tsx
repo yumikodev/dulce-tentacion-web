@@ -27,19 +27,19 @@ export default function SearchInput() {
 
   return (
     <form
-      className="bg-rose-50 flex items-center px-1 rounded-3xl max-w-xl mx-auto shadow animate-bounceIn"
+      className="animate-bounceIn mx-auto flex max-w-xl items-center rounded-3xl bg-rose-50 px-1 shadow"
       onSubmit={handleSubmit}
     >
       <input
         type="search"
         name="search"
         placeholder="Buscar un postre..."
-        className="px-3 py-2 outline-none w-full rounded-2xl"
+        className="w-full rounded-2xl px-3 py-2 outline-none"
         autoComplete="off"
       />
       <button
         type="submit"
-        className="text-rose-50 bg-rose-500 p-2 rounded-2xl"
+        className="rounded-2xl bg-rose-500 p-2 text-rose-50"
       >
         <FiSearch />
       </button>

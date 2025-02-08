@@ -40,7 +40,7 @@ export default function ItemsList({ search, category }: Props) {
     <div>
       <CategorySwitcher filter={filter} handleSwitch={handleSwitch} />
 
-      <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5 mx-auto max-w-screen-xl">
+      <div className="xs:grid-cols-2 mx-auto mt-5 grid max-w-screen-xl grid-cols-1 gap-3 md:grid-cols-3">
         {parsedData.map(({ id, category, img, name, price }) => (
           <ProductCard
             key={id}

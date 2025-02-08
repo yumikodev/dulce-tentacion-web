@@ -17,10 +17,10 @@ export function Details({ index }: Props) {
   const { description, img, name, category, price, availability } = data[index];
 
   return (
-    <div className="grid grid-cols-1 grid-rows-2 items-center max-w-screen-lg gap-2 sm:grid-cols-2 sm:grid-rows-1 sm:gap-5 mb-6 mx-auto">
+    <div className="mx-auto mb-6 grid max-w-screen-lg grid-cols-1 grid-rows-2 items-center gap-2 sm:grid-cols-2 sm:grid-rows-1 sm:gap-5">
       {/* Image preview */}
-      <div className="relative rounded-2xl w-full h-60 overflow-hidden lg:h-full">
-        <span className="absolute top-0 left-0 bg-rose-950/50 backdrop-blur-2xl rounded-br-2xl">
+      <div className="relative h-60 w-full overflow-hidden rounded-2xl lg:h-full">
+        <span className="absolute top-0 left-0 rounded-br-2xl bg-rose-950/50 backdrop-blur-2xl">
           <div className="flex items-center gap-2 px-3 py-2 text-rose-50">
             {category === "general" ? (
               <>
@@ -38,7 +38,7 @@ export function Details({ index }: Props) {
           alt={name}
           width={500}
           height={180}
-          className="w-full h-60 object-cover lg:h-full"
+          className="h-60 w-full object-cover lg:h-full"
         />
       </div>
 
@@ -47,18 +47,18 @@ export function Details({ index }: Props) {
         <h1 className="text-3xl font-semibold">{name}</h1>
         <p className="mb-1">{description}</p>
 
-        <p className="flex gap-1 text-4xl font-passion-one text-rose-950 mb-2">
+        <p className="font-passion-one mb-2 flex gap-1 text-4xl text-rose-950">
           S/. {(price[priceIndex] / 100).toFixed(2)}
         </p>
 
-        <h2 className="text-xl mb-1">Disponibilidad:</h2>
-        <ul className="flex gap-2 mb-3">
+        <h2 className="mb-1 text-xl">Disponibilidad:</h2>
+        <ul className="mb-3 flex gap-2">
           {availability.map((label, key) => (
             <li
               key={key}
-              className={`px-3 py-1 rounded-3xl cursor-pointer ${
+              className={`cursor-pointer rounded-3xl px-3 py-1 ${
                 priceIndex === key ? "bg-rose-950" : "bg-rose-800"
-              } hover:bg-rose-900 text-rose-50 transition-colors duration-300`}
+              } text-rose-50 transition-colors duration-300 hover:bg-rose-900`}
               onClick={() => setPriceIndex(key)}
             >
               {label}

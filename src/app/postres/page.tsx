@@ -10,15 +10,15 @@ export default async function Postres({ searchParams }: Props) {
   const { search, category } = await searchParams;
 
   return (
-    <div className="container p-3 mt-20 w-full mx-auto">
+    <div className="container mx-auto mt-20 w-full p-3">
       <SearchInput />
 
       {search && (
         <div>
-          <p className="text-center mt-2">Buscando: {search}</p>
+          <p className="mt-2 text-center">Buscando: {search}</p>
           <Link
             href="/postres"
-            className="block text-center text-rose-700 underline mt-0.5"
+            className="mt-0.5 block text-center text-rose-700 underline"
           >
             Reiniciar busqueda
           </Link>

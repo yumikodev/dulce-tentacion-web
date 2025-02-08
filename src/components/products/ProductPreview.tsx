@@ -18,15 +18,15 @@ function ProductPreview() {
   };
 
   return (
-    <section id="products" className="p-4 w-full">
+    <section id="products" className="w-full p-4">
       <div className="container mx-auto">
         <Subtitle> Productos </Subtitle>
 
-        <div className="w-full h-0.5 bg-linear-90 from-transparent via-rose-950 via-50% to-transparent"></div>
+        <div className="h-0.5 w-full bg-linear-90 from-transparent via-rose-950 via-50% to-transparent"></div>
 
         <CategorySwitcher filter={filter} handleSwitch={handleSwitch} />
 
-        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-5 max-w-screen-xl mx-auto">
+        <div className="xs:grid-cols-2 mx-auto mt-5 grid max-w-screen-xl grid-cols-1 gap-3 md:grid-cols-3">
           {data
             .filter((p) => p.category === filter)
             .slice(0, 3)
@@ -42,7 +42,7 @@ function ProductPreview() {
             ))}
         </div>
 
-        <div className="mt-6 max-w-xl mx-auto">
+        <div className="mx-auto mt-6 max-w-xl">
           <LinkBtn url={`/postres?category=${filter}`}>
             Ver la lista completa <FiArrowRight />
           </LinkBtn>

@@ -22,18 +22,14 @@ function Navbar() {
       label: "Postres",
       url: "/postres",
     },
-    {
-      label: "Sobre nosotros",
-      url: "/nosotros",
-    },
   ];
 
   const handleClick = () => setActive(!active);
 
   return (
-    <nav className="bg-rose-500 p-4 flex flex-wrap justify-between items-center fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+    <nav className="fixed top-0 left-0 z-50 flex w-full flex-wrap items-center justify-between bg-rose-500 p-4 transition-colors duration-300">
       {/* Brand */}
-      <div className="flex gap-3 items-center">
+      <div className="flex items-center gap-3">
         <Image
           src="/imgs/logo.png"
           alt="Dulce Tentación"
@@ -41,7 +37,7 @@ function Navbar() {
           height={40}
           className="rounded-full"
         />
-        <h5 className="font-dynapuff text-2xl content-center text-rose-50 uppercase">
+        <h5 className="font-dynapuff content-center text-2xl text-rose-50 uppercase">
           Dulce Tentación
         </h5>
       </div>
@@ -63,14 +59,14 @@ function Navbar() {
       {/* Collapse */}
       <ul
         id="collapse"
-        className="w-full flex flex-col gap-4 overflow-hidden h-0 max-h-fit data-[show]:pt-4 data-[show]:h-dvh transition-all duration-300 sm:flex-row sm:!p-0 sm:w-fit sm:!h-auto sm:gap-0"
+        className="flex h-0 max-h-fit w-full flex-col gap-4 overflow-hidden transition-all duration-300 data-[show]:h-dvh data-[show]:pt-4 sm:!h-auto sm:w-fit sm:flex-row sm:gap-0 sm:!p-0"
         {...(active && { "data-show": "on" })}
       >
         {items.map(({ label, url }, key) => (
           <li key={key}>
             <Link
               href={url}
-              className="px-3 py-2 block font-semibold text-rose-50 text-center hover:underline hover:underline-offset-4 transition-all duration-300"
+              className="block px-3 py-2 text-center font-semibold text-rose-50 transition-all duration-300 hover:underline hover:underline-offset-4"
               onClick={() => setActive(false)}
             >
               {label}
