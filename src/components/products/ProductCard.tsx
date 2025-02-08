@@ -20,11 +20,11 @@ function ProductCard({ id, category, img, name, price }: Props) {
         isVisible ? "animate-fadeInLeft" : "opacity-0"
       }`}
     >
-      <div className="grid grid-cols-1 grid-rows-[160px_1fr]">
+      <div className="grid grid-cols-1 grid-rows-[150px_1fr] md:grid-rows-[190px_1fr]">
         <Image
           src={img}
           alt={name}
-          className="h-full max-h-56 w-full rounded-2xl object-cover"
+          className="h-full w-full rounded-2xl object-cover"
           width={500}
           height={400}
         />

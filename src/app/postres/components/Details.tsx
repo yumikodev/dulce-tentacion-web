@@ -18,9 +18,9 @@ export function Details({ index }: Props) {
   const { description, img, name, category, price, availability } = data[index];
 
   return (
-    <div className="mx-auto mb-6 grid max-w-screen-lg grid-cols-1 grid-rows-2 items-center gap-2 sm:grid-cols-2 sm:grid-rows-1 sm:gap-5">
+    <div className="animate-bounceIn mx-auto mb-6 grid max-w-screen-lg grid-cols-1 grid-rows-2 items-center gap-2 sm:grid-cols-2 sm:grid-rows-1 sm:gap-5">
       {/* Image preview */}
-      <div className="relative h-60 w-full overflow-hidden rounded-2xl lg:h-full">
+      <div className="relative h-60 w-full overflow-hidden rounded-2xl lg:h-80">
         <span className="absolute top-0 left-0 rounded-br-2xl bg-rose-950/50 backdrop-blur-2xl">
           <div className="flex items-center gap-2 px-3 py-2 text-rose-50">
             {category === "general" ? (
@@ -39,7 +39,7 @@ export function Details({ index }: Props) {
           alt={name}
           width={500}
           height={180}
-          className="h-60 w-full object-cover lg:h-full"
+          className="aspect-video h-60 w-full object-cover lg:h-80"
         />
       </div>
 
