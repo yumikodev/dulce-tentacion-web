@@ -68,16 +68,16 @@
     "category": "general",
     "price": [450, 4800],
     "img": "/imgs/products/p6.jpg",
-    "description": "Un delicioso pie con una base crujiente y un relleno cremoso de limón. Este postre es una alternativa baja en azúcar, endulzado con stevia para quienes buscan disfrutar de un sabor dulce sin culpa.",
+    "description": "Un clásico pie de manzana con una base dorada y crujiente, relleno de trozos de manzana caramelizada con un toque de canela. Su sabor equilibrado y su textura suave lo convierten en el postre perfecto para cualquier ocasión.",
     "availability": ["Porción", "1 Kilo"]
   },
   {
     "id": 9,
     "name": "Mini tarta de fresa",
     "category": "general",
-    "price": [100],
+    "price": [850, 2400, 9800],
     "img": "/imgs/products/p7.jpg",
-    "description": "Un delicioso pie con una base crujiente y un relleno cremoso de limón. Este postre es una alternativa baja en azúcar, endulzado con stevia para quienes buscan disfrutar de un sabor dulce sin culpa.",
-    "availability": ["Porción"]
+    "description": "Pequeña pero irresistible, esta mini tarta combina una base crujiente con un cremoso relleno de vainilla y una capa de fresas frescas. Un bocado dulce y delicado, ideal para darse un gusto en cualquier momento.",
+    "availability": ["Pack de 8 unidades", "1/4 ciento", "Ciento"]
   }
 ]
