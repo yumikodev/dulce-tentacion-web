@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Arroz con leche",
     "category": "general",
-    "price": [300],
+    "price": [450],
     "img": "/imgs/products/p1.jpg",
     "description": "Un delicioso postre tradicional hecho con arroz, leche, y azúcar, acompañado de pasas y un toque de canela. Es cremoso y dulce, ideal para disfrutar como un reconfortante postre.",
     "availability": ["Porción"]
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Crema volteada",
     "category": "general",
-    "price": [350],
+    "price": [500],
     "img": "/imgs/products/p2.jpg",
     "description": "Un postre suave y cremoso, similar al flan, hecho con leche, azúcar y huevos. Su consistencia es ligera y su sabor dulce es perfecto para los amantes de los postres tradicionales.",
     "availability": ["Porción"]
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Torta helada",
     "category": "general",
-    "price": [550, 3200, 5800],
+    "price": [800, 3500, 6400],
     "img": "/imgs/products/p3.jpg",
     "description": "Una torta fresca y ligera, ideal para los días cálidos. Su base esponjosa, con una capa de crema y un toque de fruta o chocolate, la convierte en un postre irresistible para cualquier ocasión.",
     "availability": ["Porción", "1/2 Kg", "1 Kilo"]
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Pie de limón",
     "category": "stevia",
-    "price": [550, 5000],
+    "price": [850, 7000],
     "img": "/imgs/products/p4.jpg",
     "description": "Un delicioso pie con una base crujiente y un relleno cremoso de limón. Este postre es una alternativa baja en azúcar, endulzado con stevia para quienes buscan disfrutar de un sabor dulce sin culpa.",
     "availability": ["Porción", "1 Kilo"]
@@ -39,7 +39,7 @@
     "id": 5,
     "name": "Panqueques de avena",
     "category": "stevia",
-    "price": [600],
+    "price": [1200],
     "img": "/imgs/products/p5.jpg",
     "description": "Panqueques ligeros y saludables, hechos con avena y endulzados con stevia. Son perfectos para un desayuno nutritivo y bajo en azúcar, ideales para acompañar con frutas frescas o miel.",
     "availability": ["Porción"]
@@ -48,7 +48,7 @@
     "id": 6,
     "name": "Arroz con leche",
     "category": "stevia",
-    "price": [400],
+    "price": [500],
     "img": "/imgs/products/p1.jpg",
     "description": "Un delicioso postre tradicional hecho con arroz, leche, y azúcar, acompañado de pasas y un toque de canela. Es cremoso y dulce, ideal para disfrutar como un reconfortante postre.",
     "availability": ["Porción"]
@@ -75,9 +75,36 @@
     "id": 9,
     "name": "Mini tarta de fresa",
     "category": "general",
-    "price": [850, 2400, 9800],
+    "price": [1500],
     "img": "/imgs/products/p7.jpg",
     "description": "Pequeña pero irresistible, esta mini tarta combina una base crujiente con un cremoso relleno de vainilla y una capa de fresas frescas. Un bocado dulce y delicado, ideal para darse un gusto en cualquier momento.",
-    "availability": ["Pack de 8 unidades", "1/4 ciento", "Ciento"]
+    "availability": ["Pack de 5 unidades"]
+  },
+  {
+    "id": 10,
+    "name": "Muffins de Plátano y Avena",
+    "category": "stevia",
+    "price": [850],
+    "img": "/imgs/products/p8.jpg",
+    "description": "Esponjosos y nutritivos, estos muffins combinan la dulzura natural del plátano con la textura suave de la avena. Endulzados con stevia, son una opción saludable y deliciosa para disfrutar en el desayuno o como snack.",
+    "availability": ["Porción"]
+  },
+  {
+    "id": 11,
+    "name": "Pie de chocolate",
+    "category": "general",
+    "price": [850],
+    "img": "/imgs/products/p9.jpg",
+    "description": "Un irresistible pie con base crujiente y un relleno cremoso de chocolate intenso. Perfecto para los amantes del cacao, cada bocado es una explosión de sabor suave y decadente.",
+    "availability": ["Porción"]
+  },
+  {
+    "id": 12,
+    "name": "Rollos de Canela con Manzana",
+    "category": "general",
+    "price": [800],
+    "img": "/imgs/products/p10.jpg",
+    "description": "Delicados rollos de canela rellenos con una mezcla de manzana caramelizada y especias aromáticas. Suave y esponjoso por dentro, con un glaseado ligero que realza su dulzura natural.",
+    "availability": ["Porción"]
   }
 ]
