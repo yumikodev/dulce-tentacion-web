@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa6";
 import { GiCubes, GiThreeLeaves } from "react-icons/gi";
 import data from "@/data/products.json";
-import socials from "@/data/socials.json";
+// import socials from "@/data/socials.json";
 import { useState } from "react";
 import { FiAlertCircle } from "react-icons/fi";
 
@@ -73,12 +73,16 @@ export function Details({ index }: Props) {
         </div>
 
         <LinkBtn
-          url={
-            `${socials[0].link}?` +
-            new URLSearchParams({
-              text: `Hola, he revisado su catálogo y me interesa comprar *${name}* (${category}).`,
-            })
-          }
+          // url={
+          //   `${socials[0].link}?` +
+          //   new URLSearchParams({
+          //     text: `Hola, he revisado su catálogo y me interesa comprar *${name}* (${category}).`,
+          //   })
+          // }
+          url="#"
+          onClick={() => {
+            alert("¡Disculpa, actualmente nos hemos quedado sin stock!");
+          }}
           external
           wFull
         >
