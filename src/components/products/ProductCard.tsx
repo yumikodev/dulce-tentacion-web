@@ -9,7 +9,7 @@ import { FiAlertCircle } from "react-icons/fi";
 
 type Props = Pick<Product, "id" | "name" | "price" | "category" | "img">;
 
-function ProductCard({ id, category, img, name, price }: Props) {
+function ProductCard({ id, img, name, price }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIsVisible(ref);
 
