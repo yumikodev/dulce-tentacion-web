@@ -1,5 +1,5 @@
 import { Product } from "@/types/product";
-import socials from "@/data/socials.json";
+// import socials from "@/data/socials.json";
 import LinkBtn from "../LinkBtn";
 import { FaList, FaWhatsapp } from "react-icons/fa6";
 import Image from "next/image";
@@ -46,12 +46,16 @@ function ProductCard({ id, category, img, name, price }: Props) {
       {/* Buttons */}
       <div className="flex w-full flex-wrap items-center gap-2">
         <LinkBtn
-          url={
-            `${socials[0].link}?` +
-            new URLSearchParams({
-              text: `Hola, he revisado su catálogo y me interesa comprar *${name}* (${category}).`,
-            })
-          }
+          // url={
+          //   `${socials[0].link}?` +
+          //   new URLSearchParams({
+          //     text: `Hola, he revisado su catálogo y me interesa comprar *${name}* (${category}).`,
+          //   })
+          // }
+          url="#"
+          onClick={() => {
+            alert("¡Disculpa, actualmente nos hemos quedado sin stock!");
+          }}
           external
           wFull
         >
