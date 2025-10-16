@@ -1,4 +1,4 @@
-> [!NOTE]
+> [!WARNING]
 > Este proyecto se realizó únicamente para un curso de Marketing Digital. Debido a los cambios que ha presentado Next.js en los último meses y la nula necesidad de actualizar el proyecto, será archivado para ser de sólo lectura.
 >
 > Si tienes planes de utilizar el proyeco como plantilla, te recomiendo que solo copies los estilos de Tailwind.
